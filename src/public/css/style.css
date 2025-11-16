@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+/* Page wrapper for centering page content vertically */
+.page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #111;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar h2 a {
+    color: #00e6b8;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* DETAILS */
+.product-details {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+.details-img {
+    width: 40%;
+}
+
+.details-info {
+    width: 50%;
+}
+
+.price {
+    font-size: 22px;
+    color: #00b894;
+    margin: 10px 0;
+}
+
+/* CART */
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cart-item img {
+    width: 120px;
+}
+
+/* FORMS */
+.form-box {
+    width: 100%;
+    max-width: 560px;
+    margin: 24px auto;
+    padding: 36px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.form-box input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    display: inline-block;
+    background: #00b894;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Error pages */
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.error-container h1 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.error-container p {
+  margin-bottom: 2rem;
+  color: #6c757d;
+}

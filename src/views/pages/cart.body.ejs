@@ -1,0 +1,21 @@
+<section class="cart-page">
+    <h2>Your Cart</h2>
+
+    <% if (!cart || cart.items.length === 0) { %>
+        <p>Your cart is empty.</p>
+    <% } else { %>
+        <div class="cart-list">
+            <% cart.items.forEach(item => { %>
+                <div class="cart-item">
+                    <img src="/uploads/<%= item.productId.image %>">
+                    
+                    <div>
+                        <h3><%= item.productId.title %></h3>
+                        <p>₹<%= item.productId.price %></p>
+                        <p>Qty: <%= item.quantity %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    <% } %>
+</section>
