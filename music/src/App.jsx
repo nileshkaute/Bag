@@ -3,6 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import Home from "./pages/Home";
 import Navbar from "./component/home/Navbar";
+import Admin from "./pages/admin/Admin";
+import AddProduct from "./pages/admin/AddProduct";
+
 
 const App = () => {
   const location = useLocation();
@@ -15,6 +18,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
+        
+        {/* Admin Routes */}
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/add-product" element={<AddProduct />} />
       </Routes>
     </>
   );
