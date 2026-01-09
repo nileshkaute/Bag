@@ -1,0 +1,15 @@
+The following files were created for the backend structure:
+
+1. app.js
+2. server.js
+3. .env
+4. package.json
+5. config/db.js
+6. controllers/authController.js
+7. controllers/productController.js
+8. models/userModel.js
+9. models/productModel.js
+10. routes/authRoutes.js
+11. routes/productRoutes.js
+12. middlewares/authMiddleware.js
+13. middlewares/errorMiddleware.js
